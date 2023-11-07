@@ -1,0 +1,150 @@
+
+
+html{
+    font-size: 100%;
+    font-size-adjust: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: normal;
+    color: black;
+    background-image: url(/assets/images/Group100.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    .container {
+        background: linear-gradient(155deg, #ff6b02,#e67c30, #e67c30, #a156df, #913ad8, #7a33ec);
+        width: 450px;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        margin-top: 90px;
+        margin-left: 450px;
+        color: #ffffff;
+
+        .wrapper {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+
+            .heading {
+                font-size: 20px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: 400;
+                margin-top: -60px;
+            }
+
+            .email {
+            font-size: 16px;
+             font-weight: 400;
+             margin: 0; 
+             display: flex;  
+             margin-left: 55px;
+            }
+
+            .senha {
+                font-size: 16px;
+             font-weight: 400;
+             margin: 0; 
+             display: flex;  
+             margin-left: 55px;
+            }
+
+
+            p {
+             font-size: 16px;
+             font-weight: 400;
+             margin: 0; 
+             display: flex;  
+             margin-left: 25px;
+            }
+
+            input {
+                width: 300px;
+                height: 35px;
+                margin: 10px;
+                margin-bottom: 5px;
+                border-radius: 10px;
+                border: transparent;
+            }
+
+            a {
+                font-size: 16px;
+                text-decoration: none;
+                color:#ffffff;
+                display: flex;
+                position: relative;
+                left: 13%;
+                padding-bottom: 10px;
+            }
+
+            button {
+                width: 200px;
+                height: 45px;
+                margin-top: 10px;
+                background-color: #8805f0;
+                border: transparent;
+                cursor: pointer;
+                border-radius: 20px;
+                margin-left: 20px;
+
+                a  {
+                font-size: 20px;
+                padding: 10px;
+                color: #ffffff;
+                display: flex;
+               margin-left: 33px;
+                text-align: center;
+                
+                }
+            }
+
+            .striped {
+                margin-right: 20px;
+                margin-top: 20px;
+                display: flex;
+
+            }
+
+            .login-form-footer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                    margin-top: 20px;
+                    margin-left: 10px;
+                    margin-right: 105px;
+                    background-color: #ffffff;
+                    padding: 5px 40px 5px 40px ;  
+                    border-radius: 10px;
+                }
+                
+                .face {
+                    background-color: #3b5998;
+                    margin-right: 10px;
+                    opacity: 100%;
+                }
+            }
+
+        }
+
+
+    }
+
+}
+
+}
