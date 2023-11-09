@@ -1,0 +1,106 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@font-face {
+  font-family: "Threat"; /* Dê um nome à sua fonte */
+  src: url("/assets/fonts/threat-2oaex.otf") format("truetype");
+}
+:root {
+  --branco-principal: #ffff;
+  --laranja-marca: #FF6B00;
+  --roxo-marca: #8805F0;
+  --cor-de-fundo: #000000;
+  --bordas: #CBC8C8;
+  --gradient: background-image: linear-gradient(45deg, #FF6B00, #8805F0) 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* body {
+  background-color: var(--cor-de-fundo);
+  width: 100%;
+  min-height: 100vh;
+}
+* body header {
+  flex-wrap: wrap;
+  margin: 20px;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  z-index: 6;
+}
+* body header .logo {
+  width: 100%;
+  height: 51px;
+  margin-left: 15px;
+}
+* body header .perfil {
+  width: 70px;
+  height: 70px;
+  padding: 5px;
+  margin-right: 65px;
+}
+* body .banner__principal {
+  width: 100%;
+  height: 80vh;
+  background-image: url(/assets/images/roxy2.png);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  display: grid;
+  grid-template-columns: 50% 50% 20%;
+}
+* body .banner__principal h1 {
+  width: 100%;
+  height: 74px;
+  font-family: Threat;
+  font-size: 35px;
+  font-weight: 400;
+  color: white;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  margin-top: 230px;
+}
+* body .sessao__colecao .container__colecao {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+}
+* body .sessao__colecao .container__colecao .roupa {
+  flex: 1 1 1 150px;
+}
+* body .sessao__colecao .container__colecao .roupa img {
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  width: 200px;
+  height: 250px;
+  margin: 20px;
+}
+* body .sessao__colecao .container__colecao .roupa .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  margin-top: -30px;
+}
+* body .sessao__colecao .container__colecao .roupa .text p {
+  font-family: "Inter";
+  color: var(--branco-principal);
+  text-align: center;
+}
+* body .sessao__colecao .container__colecao .roupa .text img {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+}
+* body .sessao__colecao .container__colecao .roupa > div {
+  flex: 1 1 200px;
+}/*# sourceMappingURL=adm.css.map */
