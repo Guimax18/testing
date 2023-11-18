@@ -1,4 +1,7 @@
-import './Login.scss';
+import '../login/Login.scss';
+import bgLogin from '../assets/images/Group100.png'
+import facebook from '../assets/icons/simbolo-de-aplicativo-do-facebook.png'
+import google from '../assets/icons/google.png'
 import { Link } from 'react-router-dom';
 
 
@@ -36,14 +39,15 @@ export default function Login() {
                 <div class="method">
                     <div class="login-form-footer">
                         <a href="#">
-                          <img src="/assets/icons/simbolo-de-aplicativo-do-facebook.png" alt="Facebook" class="face"/></a>
+                          <img src={facebook} alt="Facebook" class="face"/></a>
                         <a href="#">
-                          <img src="/assets/icons/google.png" alt="Google" class="google"/></a>
+                          <img src={google} alt="Google" class="google"/></a>
                       </div>
                 </div>
             </section>
         </div>
     </main>
+    <img src={bgLogin} alt='fundo de anime' className='bgPrincipal'/>
     </div>
   );
   

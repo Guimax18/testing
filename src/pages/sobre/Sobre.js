@@ -23,7 +23,7 @@ export default function Sobre() {
         <div class="menumb">
         <div class="icons__header">    
             <a href=""><img class="sacola" src="/Assets/icons/Sacola-branca.png" alt="sacola de compras"/></a>
-            <a href="https://login-animix.netlify.app/"><img class="perfil" src="/Assets/icons/perfil.png" alt="icone de perfil"/></a>
+            <a href="https://login-animix.netlify.app/"><img class="perfil" src="/Assets/icons/perfil." alt="icone de perfil"/></a>
         </div>  
         <div class="bx bx-menu" id="menu-icon">
             <img src="/assets/icons/menu-aberto.png" alt="menumb" class="menu-icon"/>

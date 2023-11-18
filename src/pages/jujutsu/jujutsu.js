@@ -1,4 +1,8 @@
-import './jujutsu.scss';
+import '../jujutsu/jujutsu.scss';
+import logo from '../assets/logo img/logo.animix.png'
+import lupa from '../assets/icons/lupa-2.png'
+import sacola from '../assets/icons/sacola-branca.png'
+import perfil from '../assets/icons/perfil.png'
 import { Link } from 'react-router-dom';
 
 
@@ -7,29 +11,30 @@ export default function Jujutsu() {
 
   return (
     <div className='pagina-jujutsu'>
-    <header class="cabecalho">
-        <a href="/"><img src="/assets/logo img/logo animix x jujutsu.png" alt="logo_principal" class="logo"/></a>
+    <header Class="cabecalho">
+        <a href="/"><img src={logo} alt="logo_principal" class="logo"/></a>
             <nav>
                 <ul class="navbar">
-                    <li><a href="/">Categoria</a></li>
-                    <li><a href="/">Coleção</a></li>
-                    <li><a href="/">Sobre</a></li>
+                    <li><a href="#Categoria">Categoria</a></li>
+                    <li><a href="#colecao">Coleção</a></li>
+                    <li><a href="../pages/sobre/Sobre.js">Sobre</a></li>
                     <div class="search-container">
                         <input type="text" class="search-box"/>
-                        <div class="search-icon"><img src="/assets/icons/lupa-2.png" alt="lupa"/></div>
+                        <div class="search-icon"><img src={lupa} alt="lupa"/></div>
                       </div>
                 </ul>
             </nav>
         <div class="menumb">
         <div class="icons__header">    
-            <a href=""><img class="sacola" src="/Assets/icons/Sacola-branca.png" alt="sacola de compras"/></a>
-            <a href="https://login-animix.netlify.app/"><img class="perfil" src="/Assets/icons/perfil 1.png" alt="icone de perfil"/></a>
+            <a href=""><img class="sacola" src={sacola} alt="sacola de compras"/></a>
+            <a href="/Login Page - ANIMIX/Login Page - ANIMIX/login.html"><img class="perfil" src={perfil} alt="icone de perfil"/></a>
         </div>  
         <div class="bx bx-menu" id="menu-icon">
             <img src="/assets/icons/menu-aberto.png" alt="menumb" class="menu-icon"/>
         </div>  
         </div>
     </header>
+
 
     <section class="banner__principal">
         <div class="text__principal">
