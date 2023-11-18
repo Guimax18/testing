@@ -10,7 +10,7 @@ export default function Consulta() {
     const [listaRoupas, setListaRoupas] = useState([]);
 
     async function buscarRoupas() {
-        let r = await axios.get('http://localhost:3000/roupas');
+        let r = await axios.get('http://localhost:8400/roupa');
         let roupas = r.data;
 
         setListaRoupas(roupas);
@@ -42,8 +42,8 @@ export default function Consulta() {
             <tbody>
                 {listaRoupas.map(item =>        
             <tr>
-                <th>{item.id}</th>
-                <th>{item.nome}</th>
+                <th>{item.id_roupa}</th>
+                <th>{item.nm_roupa}</th>
                 <th>{item.categoria}</th>
                 <th>{item.tamanho}</th>
                 <th>{item.valor}</th>
