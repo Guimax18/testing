@@ -16,14 +16,14 @@ export default function Cadastro() {
   async function salvarRoupa() {
     let body = {
         nome: nome,
-        Categoria: categoria,
+        categoria: categoria,
         tamanho: tamanho,
         valor: valor,
         cor: cor,
         anime: anime
     }
 
-   let r = await axios.post('http://localhost:3000/roupas', body);
+   let r = await axios.post('http://localhost:8400/roupa/', body);
    let id = r.data.id;
    
    alert('Roupa cadastrada. id' + id);
