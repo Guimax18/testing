@@ -1,0 +1,17 @@
+.page-consulta {
+    margin: 0;
+    box-sizing: border-box;
+
+    table {
+        width: 100%;
+        flex-wrap: wrap;
+        
+        tr {
+            flex-direction: column;
+
+            th {
+                padding: 10px;
+            }
+        }
+    }
+}
