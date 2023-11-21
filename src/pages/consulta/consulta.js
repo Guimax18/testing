@@ -16,9 +16,9 @@ export default function Consulta() {
         setListaRoupas(roupas);
     }
 
-    /*useEffect(() => {
+    useEffect(() => {
         buscarRoupas();
-    }, [])*/
+    }, []);
 
 
     return (
