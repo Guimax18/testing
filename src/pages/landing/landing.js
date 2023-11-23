@@ -11,6 +11,14 @@ import cartao from '../assets/icons/cartoes-de-credito.png'
 import jujutsuLogo from '../assets/logo img/logo jjk.jpg'
 import atackLogo from '../assets/logo img/logo-atack2.png'
 import demonLogo from '../assets/logo img/logo kny.jpg'
+import hokage from '../assets/images/hokage.jpg'
+import blusa from '../assets/images/blusa.webp'
+import otaku from '../assets/images/banner otaku.webp'
+import purple from '../assets/images/purple.png'
+import ftAKi from '../assets/roupas img/animes/camiseta aki 3.jpg'
+
+import bgInstagram from '../assets/images/rectangle.png'
+import iconInsta from '../assets/icons/instagram.png'
 import React from 'react';
 
 import { Link } from 'react-router-dom';
@@ -116,23 +124,25 @@ export default function landing() {
         </div> 
     </section>
     
+    <h2 className='ilustration__titulo'>Revolucionando a moda com nossos personagens favoritos</h2>
+    <img className='roxo' src={purple}  alt='fundo roxo'/>
     <section class="images__ilustration">
-        <div class="hokage">
-            <img src="./Assets/images/hokage.jpg" alt="hokage" class="hokage"/>
+            <div class="hokage">
+                <img src={hokage} alt="hokage" class="hokage"/>
             </div>
-        <div class="jiraya">
-        <img src="./Assets/images/blusa.webp" alt="blusa__jiraya" class="blusa__jiraya"/>
-        </div>
-        <div class="otaku">
-        <img src="./Assets/images/banner otaku.webp" alt="imagem_otaku" class="otaku"/>
-        </div>
+            <div class="jiraya">
+                <img src={blusa} alt="blusa__jiraya" class="blusa__jiraya"/>
+            </div>
+            <div class="otaku">
+                <img src={otaku} alt="imagem_otaku" class="otaku"/>
+            </div>
     </section>
 
 
     <section class="sessao__colecao" id="colecao">
         <div class="container__colecao">
         <div>
-            <a href=""><img src="/Assets/roupas img/animes/camiseta aki 3.jpg" alt="chainsaw" class="chainsaw"/></a>
+            <a href=""><img src={ftAKi} alt="chainsaw" class="chainsaw"/></a>
             <p>Chainsaw-Man</p>
         </div>
         <div>
@@ -168,10 +178,11 @@ export default function landing() {
 
 
 
+    <img className='bg__insta' src={bgInstagram} alt='fundo laranja' />
     <section class="sessao__instagram">
         <div class="container__instagram">
         <div class="insta_all">
-            <a href="https://www.instagram.com/animix.set/"><img src="/Assets/icons/instagram.png" alt="icon insta"/></a>
+            <a href="https://www.instagram.com/animix.set/"><img src={iconInsta} alt="icon insta"/></a>
         <div class="insta">
             <h3>Siga nosso</h3>
             <h4>Instagram</h4>
