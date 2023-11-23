@@ -3,6 +3,7 @@ import './cadastro.scss';
 import axios from 'axios'
 import logo from '../assets/logo img/logo.animix.png'
 import perfil from '../assets/icons/perfil.png'
+import img from '../assets/icons'
 import { Link, useParams } from 'react-router-dom';
 
 
@@ -56,6 +57,21 @@ export default function Cadastro() {
     }
   }
 
+  async function excluirProduto(Id) {
+    try {
+        const response = await axios.delete(`http://localhost:8400/roupa/${Id}`);
+
+        if (response.status === 200) {
+            alert('Roupa excluído com sucesso.');
+            ListaRoupas();
+        } else {
+            alert('Falha ao excluir a roupa.');
+        }
+    } catch (error) {
+        alert('Ocorreu um erro ao tentar excluir a roupa:', error);
+    }
+}
+
 
   return (
     <div className='pagina-cadastro'>
@@ -66,52 +82,48 @@ export default function Cadastro() {
       <a href="/Login Page - ANIMIX/Login Page - ANIMIX/login.html"><img class="perfil" src={perfil} alt="icone de perfil"/></a>
       </div>
 
-      <img src=''/>
-
-      <div>
-      <input type='file'/>
-      </div>
-
-      <div>
-        <img src={'http://localhost:8400/' + imagem}/>
-      </div>
-
-      <div className='form'>
-        <div>
-          <label>Nome: </label>
-          <input type='text' value={nome} onChange={e => setNome(e.target.value)}/>
+    <section className='form'>
+        <div className='form__imagem'>
+          <label for="imagem">Imagem:</label>
+          <input className="imagem" type="file" name="imagem" onChange={e => setImagem(e.target.files[0])}/>
         </div>
 
-        <div>
-          <label>Categoria: </label>
-          <input type='text' value={categoria} onChange={e => setCategoria(e.target.value)}/>
+      <div className='form__box'>
+        <div className='form__div'>
+          <label className='form__name'>Nome: </label>
+          <input className='form__input' type='text' value={nome} onChange={e => setNome(e.target.value)}/>
         </div>
 
-        <div>
-          <label>Tamanho: </label>
-          <input type='text' value={tamanho} onChange={e => setTamanho(e.target.value)}/>
+        <div className='form__div'>
+          <label className='form__name'>Categoria: </label>
+          <input className='form__input' type='text' value={categoria} onChange={e => setCategoria(e.target.value)}/>
         </div>
 
-        <div>
-          <label>Valor: </label>
-          <input type='text' value={valor} onChange={e => setValor(e.target.value)}/>
+        <div className='form__div'>
+          <label className='form__name'>Tamanho: </label>
+          <input className='form__input' type='text' value={tamanho} onChange={e => setTamanho(e.target.value)}/>
         </div>
 
-        <div>
-          <label>Cor: </label>
-          <input type='text' value={cor} onChange={e => setCor(e.target.value)}/>
+        <div className='form__div'>
+          <label className='form__name'>Valor: </label>
+          <input className='form__input' type='text' value={valor} onChange={e => setValor(e.target.value)}/>
         </div>
 
-        <div>
-          <label>Anime: </label>
-          <input type='text' value={anime} onChange={e => setAnime(e.target.value)}/>
+        <div className='form__div'>
+          <label className='form__name'>Cor: </label>
+          <input className='form__input' type='text' value={cor} onChange={e => setCor(e.target.value)}/>
         </div>
 
-        <div>
+        <div className='form__div'>
+          <label className='form__name'>Anime: </label>
+          <input className='form__input' type='text' value={anime} onChange={e => setAnime(e.target.value)}/>
+        </div>
+
+        <div className='form__button'>
           <button onClick={salvarRoupa}> Cadastrar </button>
         </div>
       </div>
-
+      </section>
     </div>
   )
   
