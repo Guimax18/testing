@@ -16,9 +16,16 @@ import blusa from '../assets/images/blusa.webp'
 import otaku from '../assets/images/banner otaku.webp'
 import purple from '../assets/images/purple.png'
 import ftAKi from '../assets/roupas img/animes/camiseta aki 3.jpg'
-
+import imgUsui2 from '../assets/roupas img/demon/camiseta usui 2.jpg'
+import imgCamDocinhomodel from '../assets/roupas img/feminina/camiseta/camiseta modelo docinho.jpg'
+import imgCamPretaEren from '../assets/roupas img/snk/camiseta preta.jpg'
+import imgSaiacCorrente from '../assets/roupas img/feminina/saia/saia preta com corrente.jpg'
+import imgCamMeninaVer from '../assets/roupas img/feminina/camiseta/camiseta menina verde.jpg'
+import imgCamSukuna2  from '../assets/roupas img/jjk/camiseta sukuna 2.jpg'
+import imgCamDavid from '../assets/roupas img/animes/camiseta david.jpg'
 import bgInstagram from '../assets/images/rectangle.png'
 import iconInsta from '../assets/icons/instagram.png'
+import imgFooter from '../assets/images/bgfooter.jpg'
 import React from 'react';
 
 import { Link } from 'react-router-dom';
@@ -58,7 +65,8 @@ export default function landing() {
         <div class="text__principal">
         <h1 class="texto1">Estamos abrindo</h1> 
         <h1 class="texto2">caminho para uma</h1>  
-        <h1 class="texto3">nova era da moda</h1>
+        <h1 class="texto3">nova era da  
+        <span>moda</span></h1>
         </div>
        <img src={mulherBanner} alt="moça do banner" class="mulher__banner"/>
     </section>
@@ -146,31 +154,31 @@ export default function landing() {
             <p>Chainsaw-Man</p>
         </div>
         <div>
-            <a href=""><img src="/Assets/roupas img/demon/camiseta usui 2.jpg" alt="usui" class="usui"/></a>
+            <a href=""><img src={imgUsui2} alt="usui" class="usui"/></a>
             <p>Demon Slayer</p>
         </div>
         <div>
-            <a href=""><img src="/Assets/roupas img/feminina/camiseta/camiseta modelo docinho.jpg" alt="docinho" class="docinho"/></a>
+            <a href=""><img src={imgCamDocinhomodel} alt="docinho" class="docinho"/></a>
             <p>Meninas Super-Poderosas</p>
         </div>
         <div>
-            <a href=""><img src="/Assets/roupas img/animes/camiseta david.jpg" alt="cyber"/></a>
+            <a href=""><img src={imgCamDavid} alt="cyber"/></a>
             <p>Cyberpunk Edge Runners</p>
         </div>
         <div>
-            <a href=""><img src="/Assets/roupas img/snk/camiseta preta.jpg" alt="snk"/></a>
+            <a href=""><img src={imgCamPretaEren} alt="snk"/></a>
             <p>Atack on Titans</p>
         </div>
         <div>
-            <a href=""><img src="/Assets/roupas img/feminina/saia/saia preta com corrente.jpg" alt="saia"/></a>
+            <a href=""><img src={imgSaiacCorrente} alt="saia"/></a>
             <p>Korean</p>
         </div>
         <div>
-            <a href=""><img src="/Assets/roupas img/feminina/camiseta/camiseta menina verde.jpg" alt="feminina"/></a>
+            <a href=""><img src={imgCamMeninaVer} alt="feminina"/></a>
             <p>Feminino</p>
         </div>
         <div>
-            <a href=""><img src="/Assets/roupas img/jjk/camiseta sukuna 2.jpg" alt="jjk"/></a>
+            <a href=""><img src={imgCamSukuna2} alt="jjk"/></a>
             <p>Jujutsu Kaizen</p>
         </div>
     </div>
@@ -197,7 +205,7 @@ export default function landing() {
         </div>
     </section>
 
-
+    <img className="img__footer" src={imgFooter}  alt='imagem de fundo do rodape' />
     <footer class="sessao__footer">
         <div class="footer__content">
             <div class="row-footer">
