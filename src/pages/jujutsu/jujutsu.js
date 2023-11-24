@@ -3,6 +3,19 @@ import logo from '../assets/logo img/logo.animix.png'
 import lupa from '../assets/icons/lupa-2.png'
 import sacola from '../assets/icons/sacola-branca.png'
 import perfil from '../assets/icons/perfil.png'
+
+
+import imgCamSukuna2  from '../assets/roupas img/jjk/camiseta sukuna 2.jpg'
+
+
+
+import bgInstagram from '../assets/images/rectangle.png'
+import iconInsta from '../assets/icons/instagram.png'
+import imgFooter from '../assets/images/bgfooter.jpg'
+import imgChain from '../assets/images/chain.jpg'
+import homi from '../assets/images/pexels-justin-l-u-c-k-5707180.jpg'
+import muieInsta from '../assets/images/pexels-th-team-7516447.jpg'
+import modeloRosa from '../assets/images/modelo rosa 2.webp'
 import { Link } from 'react-router-dom';
 
 
@@ -93,25 +106,26 @@ export default function Jujutsu() {
     </div>
     </section>
 
-
+    <img className='bg__insta' src={bgInstagram} alt='fundo laranja' />
     <section class="sessao__instagram">
         <div class="container__instagram">
         <div class="insta_all">
-            <a href="https://www.instagram.com/animix.set/"><img src="/Assets/icons/instagram.png" alt="icon insta"/></a>
+            <a href="https://www.instagram.com/animix.set/"><img src={iconInsta} alt="icon insta"/></a>
         <div class="insta">
             <h3>Siga nosso</h3>
             <h4>Instagram</h4>
         </div>
         </div>
         <div class="img__insta">
-            <img src="/Assets/images/chain.jpg" alt="chain" class="chain"/>
-            <img src="/Assets/images/pexels-justin-l-u-c-k-5707180.jpg" alt="homi" class="modelo1"/>
-            <img src="/Assets/images/pexels-th-team-7516447.jpg" alt="muie" class="muie"/>
-            <img src="/Assets/images/modelo rosa 2.webp" alt="rosa" class="rosa"/>
+            <img src={imgChain} alt="chain" class="chain"/>
+            <img src={homi} alt="homi" class="modelo1"/>
+            <img src={muieInsta} alt="muie" class="muie"/>
+            <img src={modeloRosa} alt="rosa" class="rosa"/>
         </div>
         </div>
     </section>
 
+    <img className="img__footer" src={imgFooter}  alt='imagem de fundo do rodape' />
     <footer class="sessao__footer">
         <div class="footer__content">
             <div class="row-footer">
