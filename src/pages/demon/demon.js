@@ -1,4 +1,17 @@
 import './demon.scss';
+import logo from '../assets/logo img/logo.animix.png'
+import lupa from '../assets/icons/lupa-2.png'
+import sacola from '../assets/icons/sacola-branca.png'
+import perfil from '../assets/icons/perfil.png'
+
+
+import bgInstagram from '../assets/images/rectangle.png'
+import iconInsta from '../assets/icons/instagram.png'
+import imgFooter from '../assets/images/bgfooter.jpg'
+import imgChain from '../assets/images/chain.jpg'
+import homi from '../assets/images/pexels-justin-l-u-c-k-5707180.jpg'
+import muieInsta from '../assets/images/pexels-th-team-7516447.jpg'
+import modeloRosa from '../assets/images/modelo rosa 2.webp'
 import { Link } from 'react-router-dom';
 
 
@@ -7,23 +20,23 @@ export default function Demon() {
 
   return (
     <div className='pagina-demon'>
-    <header class="cabecalho">
-        <a href="/"><img src="/assets/logo img/logo animix x demon.png" alt="logo_principal" class="logo"/></a>
+    <header Class="cabecalho">
+        <a href="/"><img src={logo} alt="logo_principal" class="logo"/></a>
             <nav>
                 <ul class="navbar">
-                    <li><a href="/">Categoria</a></li>
-                    <li><a href="/">Coleção</a></li>
-                    <li><a href="/">Sobre</a></li>
+                    <li><a href="#Categoria">Categoria</a></li>
+                    <li><a href="#colecao">Coleção</a></li>
+                    <li><a href="/sobre">Sobre</a></li>
                     <div class="search-container">
                         <input type="text" class="search-box"/>
-                        <div class="search-icon"><img src="/assets/icons/lupa-2.png" alt="lupa"/></div>
+                        <div class="search-icon"><img src={lupa} alt="lupa"/></div>
                       </div>
                 </ul>
             </nav>
         <div class="menumb">
         <div class="icons__header">    
-            <a href=""><img class="sacola" src="/Assets/icons/Sacola-branca.png" alt="sacola de compras"/></a>
-            <a href="https://login-animix.netlify.app/"><img class="perfil" src="/Assets/icons/picsart_23-09-24_00-48-40-099.png" alt="icone de perfil"/></a>
+            <a href=""><img class="sacola" src={sacola} alt="sacola de compras"/></a>
+            <a href="/login"><img class="perfil" src={perfil} alt="icone de perfil"/></a>
         </div>  
         <div class="bx bx-menu" id="menu-icon">
             <img src="/assets/icons/menu-aberto.png" alt="menumb" class="menu-icon"/>
@@ -87,24 +100,26 @@ export default function Demon() {
     </section>
 
 
+    <img className='bg__insta' src={bgInstagram} alt='fundo laranja' />
     <section class="sessao__instagram">
         <div class="container__instagram">
         <div class="insta_all">
-            <a href="https://www.instagram.com/animix.set/"><img src="/Assets/icons/instagram.png" alt="icon insta"/></a>
+            <a href="https://www.instagram.com/animix.set/"><img src={iconInsta} alt="icon insta"/></a>
         <div class="insta">
             <h3>Siga nosso</h3>
             <h4>Instagram</h4>
         </div>
         </div>
         <div class="img__insta">
-            <img src="/Assets/images/chain.jpg" alt="chain" class="chain"/>
-            <img src="/Assets/images/pexels-justin-l-u-c-k-5707180.jpg" alt="homi" class="modelo1"/>
-            <img src="/Assets/images/pexels-th-team-7516447.jpg" alt="muie" class="muie"/>
-            <img src="/Assets/images/modelo rosa 2.webp" alt="rosa" class="rosa"/>
+            <img src={imgChain} alt="chain" class="chain"/>
+            <img src={homi} alt="homi" class="modelo1"/>
+            <img src={muieInsta} alt="muie" class="muie"/>
+            <img src={modeloRosa} alt="rosa" class="rosa"/>
         </div>
         </div>
     </section>
 
+    <img className="img__footer" src={imgFooter}  alt='imagem de fundo do rodape' />
     <footer class="sessao__footer">
         <div class="footer__content">
             <div class="row-footer">
