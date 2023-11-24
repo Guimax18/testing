@@ -1,5 +1,7 @@
 import axios from 'axios'
 import './consulta.scss';
+import logo from '../assets/logo img/logo.animix.png'
+import perfil from '../assets/icons/perfil.png'
 import { useEffect, useState } from 'react';
 
 
@@ -23,9 +25,11 @@ export default function Consulta() {
 
     return (
         <div className="page-consulta">
-            <h1>Consultar catalogo</h1>
-
-        <button onClick={buscarRoupas}> Listar Roupas </button>
+      <div className='header'>
+      <a href="/"><img src={logo} alt="logo_principal" class="logo"/></a>
+      <h1>Consulta de Roupas</h1>
+      <a href="/Login Page - ANIMIX/Login Page - ANIMIX/login.html"><img class="perfil" src={perfil} alt="icone de perfil"/></a>
+      </div>
 
         <table>
             <thead>
