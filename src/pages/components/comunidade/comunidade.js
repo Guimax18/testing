@@ -14,7 +14,7 @@ export default function comunidade() {
 
 
     return (
-        <div className='comunidade'>
+        <div className='pagina-comunidade'>
              <header class="cabecalho">
         <a href="/home"><img src={logo} alt="" class="logo"/></a>
         <h1>Crie sua própria Comunidade</h1>

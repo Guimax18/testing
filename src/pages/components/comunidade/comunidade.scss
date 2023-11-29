@@ -1,19 +1,19 @@
 
 
-.comunidade {
+.pagina-comunidade {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background: black;
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
+    height: 100%;
     font-family:  'Poppins', sans-serif;
 
 
     .cabecalho {
         display: flex;
         padding-top: 10px;
-        margin: -30px 280px 10px 0px;
+        margin: -20px 280px 10px 0px;
         text-align: center;
         align-items: center;
         justify-content: space-evenly;
@@ -36,7 +36,7 @@
         align-items: center;
         position: relative;
         z-index: 2;
-        top: -50px;
+        top: -35px;
 
         .left-comunidade{
             width: 50vw;
@@ -47,7 +47,6 @@
         
             .image{
                 width: 35vw;
-        
             }
 
 
