@@ -1,249 +1,182 @@
-import '../landing/landing.scss';
-import bgPrincipal from '../assets/images/background_anime3.png'
-import mulherBanner from '../assets/images/moça do banner.png'
-import logo from '../assets/logo img/logo.animix.png'
-import lupa from '../assets/icons/lupa-2.png'
-import sacola from '../assets/icons/sacola-branca.png'
-import perfil from '../assets/icons/perfil.png'
-import caminhao from '../assets/icons/caminhao-de-entrega.png'
-import pix from '../assets/icons/pix.png'
-import cartao from '../assets/icons/cartoes-de-credito.png'
-import jujutsuLogo from '../assets/logo img/logo jjk.jpg'
-import atackLogo from '../assets/logo img/logo-atack2.png'
-import demonLogo from '../assets/logo img/logo kny.jpg'
-import hokage from '../assets/images/hokage.jpg'
-import blusa from '../assets/images/blusa.webp'
-import otaku from '../assets/images/banner otaku.webp'
-import purple from '../assets/images/purple.png'
-import ftAKi from '../assets/roupas img/animes/camiseta aki 3.jpg'
-import imgUsui2 from '../assets/roupas img/demon/camiseta usui 2.jpg'
-import imgCamDocinhomodel from '../assets/roupas img/feminina/camiseta/camiseta modelo docinho.jpg'
-import imgCamPretaEren from '../assets/roupas img/snk/camiseta preta.jpg'
-import imgSaiacCorrente from '../assets/roupas img/feminina/saia/saia preta com corrente.jpg'
-import imgCamMeninaVer from '../assets/roupas img/feminina/camiseta/camiseta menina verde.jpg'
-import imgCamSukuna2  from '../assets/roupas img/jjk/camiseta sukuna 2.jpg'
-import imgCamDavid from '../assets/roupas img/animes/camiseta david.jpg'
-import bgInstagram from '../assets/images/rectangle.png'
-import iconInsta from '../assets/icons/instagram.png'
-import imgFooter from '../assets/images/bgfooter.jpg'
-import React from 'react';
-
+import '../home/home.scss'
 import { Link } from 'react-router-dom';
 
 
-export default function landing() {
+
+export default function Jujutsu() {
 
 
-  return (
-    <section className='landing__page'>
-    <header Class="cabecalho">
-        <a href="/"><img src={logo} alt="logo_principal" class="logo"/></a>
-            <nav>
-                <ul class="navbar">
-                    <li><a href="#Categoria">Categoria</a></li>
-                    <li><a href="#colecao">Coleção</a></li>
-                    <li><a href="../pages/sobre/Sobre.js">Sobre</a></li>
-                    <div class="search-container">
-                        <input type="text" class="search-box"/>
-                        <div class="search-icon"><img src={lupa} alt="lupa"/></div>
-                      </div>
-                </ul>
-            </nav>
-        <div class="menumb">
-        <div class="icons__header">    
-            <a href=""><img class="sacola" src={sacola} alt="sacola de compras"/></a>
-            <a href="/Login Page - ANIMIX/Login Page - ANIMIX/login.html"><img class="perfil" src={perfil} alt="icone de perfil"/></a>
-        </div>  
-        <div class="bx bx-menu" id="menu-icon">
-            <img src="/assets/icons/menu-aberto.png" alt="menumb" class="menu-icon"/>
-        </div>  
+    return (
+        <div className="pagina-inicial">
+    
+    <header class="cabecalho">
+        <div class="search-container">
+            <input type="text" class="search-box"/>
+            <div class="search-icon"><img src="/pages/assets/icones/lupa.png" alt="lupa"/></div>
+          </div>
+        <div class="social">
+            <a href="#"><img src="/pages/assets/icones/comunidade.png" alt="comunidade" class="comunidades" /></a>
+            <a href="/pages/login/login.html"><img src="/pages/assets/icones/do-utilizador.png" alt="user" class="user" /></a>
         </div>
     </header>
 
-    <img src={bgPrincipal} className="bg__principal"/>
-    <section class="banner__principal">
-        <div class="text__principal">
-        <h1 class="texto1">Estamos abrindo</h1> 
-        <h1 class="texto2">caminho para uma</h1>  
-        <h1 class="texto3">nova era da  
-        <span>moda</span></h1>
-        </div>
-       <img src={mulherBanner} alt="moça do banner" class="mulher__banner"/>
-    </section>
+   <div class="slidebar">
+        <ul class="menu">
+            <a href="#"><img src="/pages/assets/icones/logo-removebg-preview.png" alt="logo Think & Share" class="logo__principal" /></a>
+            <a href="/pages/comunidade/comunidade.html"><button class="btn__criar">
+                <img src="/pages/assets/icones/aba.png" alt="icone de editar" class="icon__criar" />Criar comunidade
+            </button></a>
+            <li class="menu__div">
+                <a href="#" class="menu__link">
+                    <img src="/pages/assets/icones/explorar.png" alt="explorar" class="explorar" />Explorar
+                </a>
+            </li>
 
-    <section class="icons_principais">
-        <img src={caminhao} alt="caminhao-de-entrega" class="icon__frete"/>
-        <div class="text__icons">
-        <h2 class="frete">Frete Grátis</h2>
-        <p>em todo o brasil</p>
-        </div>
-        <img src={pix} alt="pix" class="icon__pix"/>
-        <div class="text__icons">
-        <h2 class="pix">5% de Desconto</h2>
-        <p>para pagamentos com Pix</p>
-        </div>
-        <img src={cartao} alt="cartao" class="icon__cartao"/>
-        <div class="text__icons">
-        <h2 class="cartao">Até 10X sem juros</h2>
-        <p>Acima de R$299</p>
-        </div>
-    </section>
+            <li class="menu__div">
+                <a href="#" class="menu__link">
+                    <img src="/pages/assets/icones/controle-de-video-game.png" alt="games" class="games" />Games
+                </a>
+            </li>
+            <li class="menu__div">
+                <a href="#" class="menu__link">
+                    <img src="/pages/assets/icones/design-grafico.png" alt="Design" class="design" />Design
+                </a>
+            </li>
+            <li class="menu__div">
+                <a href="#" class="menu__link">
+                    <img src="/pages/assets/icones/laboratorio.png" alt="ciencias" class="ciencias" />Ciências
+                </a>
+            </li>
+            <li class="menu__div">
+                <a href="#" class="menu__link">
+                    <img src="/pages/assets/icones/lasca.png" alt="tec" class="tec"/>Tecnologia
+                </a>
+            </li>
+            <li class="menu__div">
+                <a href="#" class="menu__link">
+                    <img src="/pages/assets/icones/estudos-de-arte.png" alt="arte" class="arte"/>Artes
+                </a>
+            </li>
+        </ul>
+   </div>
 
-    <section class="animes__card">
-        <div class="container__animes">
-        <div class="figures">
-        <a href="/pages/jujutsu/jujutsu.html"><img src={jujutsuLogo} alt="jujustu" class="jujutsu"/></a>
-        </div>  
-        <div class="figures">
-        <a href="/pages/atack/atack.html"><img src={atackLogo} alt="atackontitans" class="atackontitans"/></a>
-        </div>
-        <div class="figures">
-        <a href="/pages/demon/demon.html"><img src={demonLogo} alt="ds" class="demon"/></a>
-        </div>
-        </div>
-    </section>
+   <div class="box__sentindo">
+    <img src="/pages/assets/images/user__sentido.png" alt="user" class="img__user" />
+    <input type="text" placeholder="Digite o que está pensando" />
+    <a href="/pages/post/post.html"><button class="btn__criar">
+        <img src="/pages/assets/icones/aba.png" alt="icone de editar" class="icon__criar" />Criar
+    </button></a>
+   </div>
 
-    <section class="sessao__categorias" id="Categoria">
-        <div class="container__images">
-        <div class="img">
-            <a href=""><img src="./Assets/roupas img/snk/jaqueta modelox.webp" alt="jaqueta" class="jaquetas"/></a>
-            <h3>jaquetas</h3>
-        </div>  
-        <div class="img">
-            <a href=""><img src="./Assets/roupas img/demon/moletom kukoshibo.webp" alt="moletom" class="moletons"/></a>
-            <h3>Moletons</h3>
-        </div>
-        <div class="img">
-            <a href=""><img src="./Assets/roupas img/jjk/camiseta gojo modelo.png" alt="masculino" class="masculino"/></a>
-            <h3>Masculino</h3>
-        </div>
-        <div class="img">     
-            <a href=""><img src="./Assets/roupas img/feminina/camiseta/camiseta modelo docinho.jpg" alt="feminino" class="feminino"/></a>
-            <h3>feminino</h3>
-        </div>
-        <div class="img">     
-            <a href=""><img src="./Assets/roupas img/jjk/chaveiro gojo e geto.jfif" alt="acessorios" class="acessorios"/></a>
-            <h3>Acessórios</h3>
-        </div>
-        <div class="img">     
-            <a href=""><img src="./Assets/roupas img/feminina/saia/saia preta com corrente.jpg" alt="saia" class="saias"/></a>
-            <h3>Saias</h3>
-        </div>   
-        </div> 
-    </section>
-    
-    <h2 className='ilustration__titulo'>Revolucionando a moda com nossos personagens favoritos</h2>
-    <img className='roxo' src={purple}  alt='fundo roxo'/>
-    <section class="images__ilustration">
-            <div class="hokage">
-                <img src={hokage} alt="hokage" class="hokage"/>
+   <section class="post">
+    <div class="posting">
+        <div class="post__container">
+            <div class="user__post">
+                <img src="/pages/assets/images/user_post.png" alt="usuario" class="img__user" />
+                <a href="#">Heavy Weapons Guy</a>
             </div>
-            <div class="jiraya">
-                <img src={blusa} alt="blusa__jiraya" class="blusa__jiraya"/>
+            <div class="descricao__post">
+                <h2>Qual é a coisa mais aleatória sobre computadores
+                     que você sabe e a maioria das pessoas não?</h2>
+                <p>Quando eu era criança, alguém me disse que você poderia assistir 
+                    toda a série Star Wars pelo terminal de comandos, apenas com caracteres do teclado. Para um computador Windows: 
+                    Passo 1: Abra o terminal no seu PC, digite o comando abaixo e pressione ↵Enter. 
+                    pkgmgr /iu:"TelnetClient" Se você ver uma...<button>Ver mais</button></p>
             </div>
-            <div class="otaku">
-                <img src={otaku} alt="imagem_otaku" class="otaku"/>
-            </div>
-    </section>
-
-
-    <section class="sessao__colecao" id="colecao">
-        <div class="container__colecao">
-        <div>
-            <a href=""><img src={ftAKi} alt="chainsaw" class="chainsaw"/></a>
-            <p>Chainsaw-Man</p>
         </div>
-        <div>
-            <a href=""><img src={imgUsui2} alt="usui" class="usui"/></a>
-            <p>Demon Slayer</p>
+        <div class="img__post">
+            <img src="/pages/assets/images/post1.png" alt="terminal cmd" class="imgPost" />
         </div>
-        <div>
-            <a href=""><img src={imgCamDocinhomodel} alt="docinho" class="docinho"/></a>
-            <p>Meninas Super-Poderosas</p>
-        </div>
-        <div>
-            <a href=""><img src={imgCamDavid} alt="cyber"/></a>
-            <p>Cyberpunk Edge Runners</p>
-        </div>
-        <div>
-            <a href=""><img src={imgCamPretaEren} alt="snk"/></a>
-            <p>Atack on Titans</p>
-        </div>
-        <div>
-            <a href=""><img src={imgSaiacCorrente} alt="saia"/></a>
-            <p>Korean</p>
-        </div>
-        <div>
-            <a href=""><img src={imgCamMeninaVer} alt="feminina"/></a>
-            <p>Feminino</p>
-        </div>
-        <div>
-            <a href=""><img src={imgCamSukuna2} alt="jjk"/></a>
-            <p>Jujutsu Kaizen</p>
+        <div class="container__icons">
+            <a href="#"><i class="fa-regular fa-thumbs-up" ></i>Like</a>
+            <a href="#"><i class="fa-regular fa-thumbs-down" ></i>Deslike</a>
+            <a href="#"><i class="fa-regular fa-heart" ></i>Amei</a>
+            <a href="#"><i class="fa-solid fa-share-nodes" ></i>Salvar</a>
         </div>
     </div>
-    </section>
+    
+    <div class="posting">
 
-
-
-    <img className='bg__insta' src={bgInstagram} alt='fundo laranja' />
-    <section class="sessao__instagram">
-        <div class="container__instagram">
-        <div class="insta_all">
-            <a href="https://www.instagram.com/animix.set/"><img src={iconInsta} alt="icon insta"/></a>
-        <div class="insta">
-            <h3>Siga nosso</h3>
-            <h4>Instagram</h4>
-        </div>
-        </div>
-        <div class="img__insta">
-            <img src="/Assets/images/chain.jpg" alt="chain" class="chain"/>
-            <img src="/Assets/images/pexels-justin-l-u-c-k-5707180.jpg" alt="homi" class="modelo1"/>
-            <img src="/Assets/images/pexels-th-team-7516447.jpg" alt="muie" class="muie"/>
-            <img src="/Assets/images/modelo rosa 2.webp" alt="rosa" class="rosa"/>
-        </div>
-        </div>
-    </section>
-
-    <img className="img__footer" src={imgFooter}  alt='imagem de fundo do rodape' />
-    <footer class="sessao__footer">
-        <div class="footer__content">
-            <div class="row-footer">
-                <div class="footer-col">
-                    <h4>Institucional</h4>
-                 <ul>
-                    <li><a href="">Sobre a Empresa</a></li>
-                 </ul>      
-                </div>
-                <div class="footer-col">
-                    <h4>Duvidas</h4>
-                 <ul>
-                    <li><a href="">Ajuda</a></li>
-                    <li><a href="">Política e Privacidade</a></li>
-                    <li><a href="">Política de troca e devolução</a></li>
-                    <li><a href="">Pagamento e envio</a></li>
-                 </ul>      
-                </div>
-                <div class="footer-col">
-                    <h4>Institucional</h4>
-                 <ul>
-                    <li><a href="">Atendimento</a></li>
-                    <li><a href="">Dúvidas?</a></li>
-                    <li><a href="">Fale Conosco</a></li>
-                 </ul>      
-                </div>
-                <div class="footer-col">
-                    <h4>Quer ficar por dentro das novidades?</h4>
-                 <div class="form-sub">
-                    <form>
-                        <input type="email" placeholder="Digite o seu e-mail" required class="email"/>
-                        <button>Inscreva-se</button>
-                    </form>
-                 </div>    
-                </div>
+        <div class="post__container">
+            <div class="user__post">
+                <img src="/pages/assets/images/user2.png" alt="usuario" class="img__user" />
+                <a href="#">Spy, maybe...</a>
+            </div>
+            <div class="descricao__post">
+                <h2>Se o sol ilumina a terra, por que o espaço é escuro?</h2>
+                <p>Algumas pessoas realmente acreditam que podemos ver a luz. Sim, eu sei, isso é estúpido.
+                    Algumas pessoas entendem que esta sala tem partículas de poeira flutuando no ar, 
+                    e as partículas que refletem mais luz parecem mais brilhantes. Para perceber o brilho, 2 coisas são necessárias.<button>Ver mais</button> </p>
             </div>
         </div>
-    </footer>
+        <div class="img__post">
+            <img src="/pages/assets/images/imgpost2.png" alt="terminal cmd" class="imgPost" />
+        </div>
+        <div class="container__icons">
+            <a href="#"><i class="fa-regular fa-thumbs-up" ></i>Like</a>
+            <a href="#"><i class="fa-regular fa-thumbs-down" ></i>Deslike</a>
+            <a href="#"><i class="fa-regular fa-heart" ></i>Amei</a>
+            <a href="#"><i class="fa-solid fa-share-nodes" ></i>Salvar</a>
+        </div>
+    </div>
+    
+    <div class="posting">
+
+        <div class="post__container">
+            <div class="user__post">
+                <img src="/pages/assets/images/user2.png" alt="usuario" class="img__user" />
+                <a href="#">Spay Maybe..</a>
+            </div>
+            <div class="descricao__post">
+                <h2>Uma base para notebook pode melhorar o desempenho nos jogos?</h2>
+                <p>Uma base para notebook pode melhorar o desempenho nos jogos? Claro, amigo! 
+                    Vamos falar sobre essa base para notebook que comprei recentemente. Eu estava cansado 
+                    de ficar com a postura errada enquanto trabalhava no computador, então resolvi investir 
+                    em uma base ergonômica. Devo dizer que fiquei...<button>Ver mais</button></p>
+            </div>
+        </div>
+        <div class="img__post">
+            <img src="/pages/assets/images/imgPost3.png" alt="terminal cmd" class="imgPost" />
+        </div>
+        <div class="container__icons">
+            <a href="#"><i class="fa-regular fa-thumbs-up" ></i>Like</a>
+            <a href="#"><i class="fa-regular fa-thumbs-down" ></i>Deslike</a>
+            <a href="#"><i class="fa-regular fa-heart" ></i>Amei</a>
+            <a href="#"><i class="fa-solid fa-share-nodes" ></i>Salvar</a>
+        </div>
+    </div>
+    
+    <div class="posting">
+
+        <div class="post__container">
+            <div class="user__post">
+                <img src="/pages/assets/images/user_post.png" alt="usuario" class="img__user" />
+                <a href="#">Heavy Weapons Guy</a>
+            </div>
+            <div class="descricao__post">
+                <h2>Por que alguns jogos e programas esquentam tanto o notebook?</h2>
+                <p>Então, eu estava enfrentando aquele problema chato de superaquecimento no meu notebook. 
+                Sabe como é, quando a gente passa horas jogando ou trabalhando, o bichinho esquenta que é uma loucura. 
+                Aí pensei: "Preciso encontrar uma solução pra isso!"
+                 E foi quando conheci esse cooler incrível. Primeiro de...<button>Ver mais</button></p>
+            </div>
+        </div>
+        <div class="img__post">
+            <img src="/pages/assets/images/imgPost4.png" alt="terminal cmd" class="imgPost" />
+        </div>
+        <div class="container__icons">
+            <a href="#"><i class="fa-regular fa-thumbs-up" ></i>Like</a>
+            <a href="#"><i class="fa-regular fa-thumbs-down" ></i>Deslike</a>
+            <a href="#"><i class="fa-regular fa-heart" ></i>Amei</a>
+            <a href="#"><i class="fa-solid fa-share-nodes" ></i>Salvar</a>
+        </div>
+    </div>
 </section>
-  );
+
+   <script src="https://kit.fontawesome.com/367f16fb48.js" crossorigin="anonymous"></script>
+
+
+        </div>
+
+    )
 }
