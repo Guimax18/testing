@@ -1,70 +1,90 @@
-import '../home/home.scss'
+import '../landing/landing.scss'
+import lupa from '../assets/icones/lupa.png'
+import logo from '../assets/icones/logo-removebg-preview.png'
+import perfil from '../assets/icones/do-utilizador.png'
+import comu from '../assets/icones/comunidade.png'
+import add from '../assets/icones/aba.png'
+import explorar from '../assets/icones/explorar.png'
+import game from '../assets/icones/controle-de-video-game.png'
+import design from '../assets/icones/design-grafico.png'
+import lab from '../assets/icones/laboratorio.png'
+import tec from '../assets/icones/lasca.png'
+import arte from '../assets/icones/estudos-de-arte.png'
+import user1 from '../assets/images/user__sentido.png'
+import user2 from '../assets/images/user_post.png'
+import post1 from '../assets/images/post1.png'
+import user3 from '../assets/images/user2.png'
+import post2 from '../assets/images/imgpost2.png'
+import post3 from '../assets/images/imgPost3.png'
+import post4 from '../assets/images/imgPost4.png'
+
+
 import { Link } from 'react-router-dom';
 
 
 
-export default function Jujutsu() {
+export default function landing() {
 
 
     return (
-        <div className="pagina-inicial">
+        <section className="pagina-inicial">
     
     <header class="cabecalho">
         <div class="search-container">
             <input type="text" class="search-box"/>
-            <div class="search-icon"><img src="/pages/assets/icones/lupa.png" alt="lupa"/></div>
+            <div class="search-icon"><img src={lupa} alt="lupa"/></div>
           </div>
         <div class="social">
-            <a href="#"><img src="/pages/assets/icones/comunidade.png" alt="comunidade" class="comunidades" /></a>
-            <a href="/pages/login/login.html"><img src="/pages/assets/icones/do-utilizador.png" alt="user" class="user" /></a>
+            <a href="/comunidade"><img src={comu} alt="comunidade" class="comunidades" /></a>
+            <a href="/login"><img src={perfil} alt="user" class="user" /></a>
         </div>
     </header>
 
    <div class="slidebar">
         <ul class="menu">
-            <a href="#"><img src="/pages/assets/icones/logo-removebg-preview.png" alt="logo Think & Share" class="logo__principal" /></a>
-            <a href="/pages/comunidade/comunidade.html"><button class="btn__criar">
-                <img src="/pages/assets/icones/aba.png" alt="icone de editar" class="icon__criar" />Criar comunidade
+            <a href="#"><img src={logo} alt="logo Think & Share" class="logo__principal" /></a>
+            <a href="/criar comunidade"><button class="btn__criar">
+                <img src={add} alt="icone de editar" class="icon__criar" />Criar comunidade
             </button></a>
             <li class="menu__div">
                 <a href="#" class="menu__link">
-                    <img src="/pages/assets/icones/explorar.png" alt="explorar" class="explorar" />Explorar
+                    <img src={explorar} alt="explorar" class="explorar" />Explorar
                 </a>
             </li>
 
             <li class="menu__div">
                 <a href="#" class="menu__link">
-                    <img src="/pages/assets/icones/controle-de-video-game.png" alt="games" class="games" />Games
+                    <img src={game} alt="games" class="games" />Games
                 </a>
             </li>
             <li class="menu__div">
                 <a href="#" class="menu__link">
-                    <img src="/pages/assets/icones/design-grafico.png" alt="Design" class="design" />Design
+                    <img src={design} alt="Design" class="design" />Design
                 </a>
             </li>
             <li class="menu__div">
                 <a href="#" class="menu__link">
-                    <img src="/pages/assets/icones/laboratorio.png" alt="ciencias" class="ciencias" />Ciências
+                    <img src={lab} alt="ciencias" class="ciencias" />Ciências
                 </a>
             </li>
             <li class="menu__div">
                 <a href="#" class="menu__link">
-                    <img src="/pages/assets/icones/lasca.png" alt="tec" class="tec"/>Tecnologia
+                    <img src={tec} alt="tec" class="tec"/>Tecnologia
                 </a>
             </li>
             <li class="menu__div">
                 <a href="#" class="menu__link">
-                    <img src="/pages/assets/icones/estudos-de-arte.png" alt="arte" class="arte"/>Artes
+                    <img src={arte} alt="arte" class="arte"/>Artes
                 </a>
             </li>
         </ul>
    </div>
 
    <div class="box__sentindo">
-    <img src="/pages/assets/images/user__sentido.png" alt="user" class="img__user" />
+    <img src={user1} alt="user" class="img__user" />
     <input type="text" placeholder="Digite o que está pensando" />
-    <a href="/pages/post/post.html"><button class="btn__criar">
-        <img src="/pages/assets/icones/aba.png" alt="icone de editar" class="icon__criar" />Criar
+    <a href="/criar post"><button class="btn__criar">
+        <img src={add} alt="icone de editar" class="icon__criar" />Criar
     </button></a>
    </div>
 
@@ -72,7 +92,7 @@ export default function Jujutsu() {
     <div class="posting">
         <div class="post__container">
             <div class="user__post">
-                <img src="/pages/assets/images/user_post.png" alt="usuario" class="img__user" />
+                <img src={user2} class="img__user" />
                 <a href="#">Heavy Weapons Guy</a>
             </div>
             <div class="descricao__post">
@@ -85,7 +105,7 @@ export default function Jujutsu() {
             </div>
         </div>
         <div class="img__post">
-            <img src="/pages/assets/images/post1.png" alt="terminal cmd" class="imgPost" />
+            <img src={post1} alt="terminal cmd" class="imgPost" />
         </div>
         <div class="container__icons">
             <a href="#"><i class="fa-regular fa-thumbs-up" ></i>Like</a>
@@ -99,7 +119,7 @@ export default function Jujutsu() {
 
         <div class="post__container">
             <div class="user__post">
-                <img src="/pages/assets/images/user2.png" alt="usuario" class="img__user" />
+                <img src={user3} alt="usuario" class="img__user" />
                 <a href="#">Spy, maybe...</a>
             </div>
             <div class="descricao__post">
@@ -110,7 +130,7 @@ export default function Jujutsu() {
             </div>
         </div>
         <div class="img__post">
-            <img src="/pages/assets/images/imgpost2.png" alt="terminal cmd" class="imgPost" />
+            <img src={post2} alt="terminal cmd" class="imgPost" />
         </div>
         <div class="container__icons">
             <a href="#"><i class="fa-regular fa-thumbs-up" ></i>Like</a>
@@ -124,7 +144,7 @@ export default function Jujutsu() {
 
         <div class="post__container">
             <div class="user__post">
-                <img src="/pages/assets/images/user2.png" alt="usuario" class="img__user" />
+                <img src={user3} alt="usuario" class="img__user" />
                 <a href="#">Spay Maybe..</a>
             </div>
             <div class="descricao__post">
@@ -136,7 +156,7 @@ export default function Jujutsu() {
             </div>
         </div>
         <div class="img__post">
-            <img src="/pages/assets/images/imgPost3.png" alt="terminal cmd" class="imgPost" />
+            <img src={post3} alt="terminal cmd" class="imgPost" />
         </div>
         <div class="container__icons">
             <a href="#"><i class="fa-regular fa-thumbs-up" ></i>Like</a>
@@ -150,7 +170,7 @@ export default function Jujutsu() {
 
         <div class="post__container">
             <div class="user__post">
-                <img src="/pages/assets/images/user_post.png" alt="usuario" class="img__user" />
+                <img src={user2} alt="usuario" class="img__user" />
                 <a href="#">Heavy Weapons Guy</a>
             </div>
             <div class="descricao__post">
@@ -162,7 +182,7 @@ export default function Jujutsu() {
             </div>
         </div>
         <div class="img__post">
-            <img src="/pages/assets/images/imgPost4.png" alt="terminal cmd" class="imgPost" />
+            <img src={post4} alt="terminal cmd" class="imgPost" />
         </div>
         <div class="container__icons">
             <a href="#"><i class="fa-regular fa-thumbs-up" ></i>Like</a>
@@ -176,7 +196,7 @@ export default function Jujutsu() {
    <script src="https://kit.fontawesome.com/367f16fb48.js" crossorigin="anonymous"></script>
 
 
-        </div>
+        </section>
 
-    )
+    );
 }

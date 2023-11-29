@@ -1,6 +1,6 @@
 
 
-.pagina-inicial {
+.comunidade_soc {
     margin: 0;
     padding-bottom: 140px;
     max-width: 100vw;
@@ -21,7 +21,6 @@
             width: 100%;
             height: 100px;
             position: fixed;
-            z-index: 9;
            
 
 
@@ -83,12 +82,12 @@
             height: 100vh;
             background: rgba(86, 86, 86, 0.35);
             backdrop-filter: blur(25px);
-            padding: 15px 15px 25px 15px;
+            padding: 15px 15px;
             z-index: 9;
             transition: all 0.5s ease;
 
             .menu {
-                height: 100vh;
+                height: 100%;
                 margin: 0;
                 padding: 0;
                 display: flex;
@@ -97,7 +96,7 @@
 
                 .logo__principal {
                     width: 120px;
-                    margin: -30px 0px 0px 0px;
+                    margin: -25px 0px 0px 0px;
                     
                 }
                     
@@ -153,6 +152,7 @@
                             color: #6372f4;
                         }
 
+
                         .menu__link {
                             display: flex;
                             text-align: center;
@@ -174,6 +174,7 @@
                             margin-right: 15px;
                         }
 
+
                         .ciencias {
                                 width: 30px;
                                 height: 30px;
@@ -193,25 +194,83 @@
                 }
             }
 
+            .box__comunidade {
+                display: flex;
+                position: relative;
+                top: 100px;
+                left: 330px;
+                align-items: center;
+                background: rgba(84, 83, 83, 0.548);
+                width: 20vw;
+                height: 120px;
+                background: rgba(84, 83, 83, 0.548);
+                border-radius: 20px;
+                border: 2px solid #6372f4;
+
+                .img__comunidade {
+                    width: 8rem;
+                    height: 100px;
+                    justify-content: flex-start;
+                    margin-left: 10px;
+                    border-radius: 20px;
+                }
+
+                .comu {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+
+                    h2 {
+                        color: #fff;
+                        font: 400;
+                        margin: 10px 0px 10px 10px;
+                    }
+
+                    a {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        text-decoration: none;
+                        color: #ffff;
+                        font: 300;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: #6372f4;
+                        }
+
+                        .seguir {
+                            margin: 10px;
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+
+                }
+
+            }
+
 
             .box__sentindo {
                 display: flex;
                 position: relative;
-                top: 100px;
-                left: 310px;
+                top: -10px;
+                left: 600px;
                 align-items: center;
                 justify-content: center;
                 text-align: center;
                 background: rgba(84, 83, 83, 0.548);
-                width: 70vw;
+                width: 48vw;
                 height: 100px;
                 border-radius: 30px;
                 border: 2px solid #6372f4;
 
                 .img__user {
-                    width: 80px;
-                    height: 80px;
-                    margin-right: 20px;
+                    width: 60px;
+                    height: 60px;
+                    margin: 20px;
                 }
 
                 input {
@@ -239,6 +298,7 @@
                     border: 2px solid #ffff;
                     color: #ffff;
                     background: transparent;
+                    margin-right: 20px;
                     
                 
 
@@ -264,7 +324,6 @@
                 justify-content: center;
                 text-align: center;
                 position: relative;
-                top: 120px;
                 left: 30%;
                 width: 60vw;
                 
