@@ -7,6 +7,7 @@ import Cadastro from './pages/cadastro/cadastro.js';
 import ComunidadeSoc from './pages/comunidade_soc/comunidade_soc.js';
 import Comunidade from './pages/components/comunidade/comunidade.js';
 import Post from './pages/components/post/post.js';
+import User from './pages/user/user.js';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
@@ -21,6 +22,7 @@ root.render(
         <Route path='/comunidade' element={<ComunidadeSoc/>} />
         <Route path='/criar comunidade' element={<Comunidade/>} />
         <Route path='/criar post' element={<Post/>} />
+        <Route path='/user' element={<User/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
